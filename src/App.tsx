@@ -1,19 +1,18 @@
-import { useState, useEffect } from "react";
 import NavBar from "./Components/NavBar/NavBar";
 import Header from "./Components/Header/Header";
-import Advice from "./Components/Advice/advice";
+import ChooseCurrency from "./Components/ChooseCurrency";
+import Advice from "./Components/Advice/Advice";
 import Footer from "./Components/Footer/Footer";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <>
       <NavBar />
       <Header />
+      <ChooseCurrency />
       <Advice />
       <Footer />
     </>
   );
 }
-
-export default App;
