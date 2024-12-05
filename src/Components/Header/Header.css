@@ -1,0 +1,46 @@
+.header1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding-top: 3rem;
+}
+
+.h1white {
+  color: white;
+  opacity: 0.7;
+}
+
+.h1gray {
+  color: gray;
+}
+
+header img {
+  height: 7rem;
+}
+
+.header2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  color: gray;
+  position: relative; /* Nécessaire pour le pseudo-élément */
+  opacity: 0.8;
+}
+
+.header2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Abaisse la barre en dessous de l'élément */
+  left: 0;
+  width: 100%; /* Prend toute la largeur */
+  height: 0.06rem; /* Épaisseur de la bordure */
+  background: linear-gradient(
+    to right,
+    transparent 20%,
+    white 50%,
+    transparent 80%
+  );
+}
