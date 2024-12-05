@@ -1,13 +1,18 @@
-import ChooseCurrency from "./components/chooseCurrency.tsx"
-import './App.css'
+import NavBar from "./Components/NavBar/NavBar";
+import Header from "./Components/Header/Header";
+import ChooseCurrency from "./Components/ChooseCurrency";
+import Advice from "./Components/Advice/Advice";
+import Footer from "./Components/Footer/Footer";
+import "./App.css";
 
-function App() {
-
+export default function App() {
   return (
     <>
-      <ChooseCurrency/>
+      <NavBar />
+      <Header />
+      <ChooseCurrency />
+      <Advice />
+      <Footer />
     </>
-  )
+  );
 }
-
-export default App;
