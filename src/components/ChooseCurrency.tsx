@@ -1,6 +1,7 @@
 import CurrencyReferences from "../utils/CurrencyList.json";
 import { useEffect, useState } from "react";
 import { useCurrency } from "../contexts/context";
+import "../Components/ChooseCurrency.css";
 
 interface CurrencyData {
     currencies: string[];
@@ -8,8 +9,7 @@ interface CurrencyData {
 
 function computeBalance(result : number, resultInput :number )
 {
-    var product =  result * resultInput
-    // return parseFloat(product).toFixed(2)
+    var product =  result * resultInput;
     return Math.round(product * 100) / 100;
 }
 
@@ -95,57 +95,64 @@ function ChooseCurrency()
         });
 
     }
-
 }, [fromList, toList, isSubmitted]);
 
+	return (
+		<div>
+			<div className="currency-selectors">
+				<select
+					name="From"
+					id="FromCurrency"
+					className="currency-container"
+					onChange={(selection) => HandleChoiceFrom(selection.target.value)}
+				>
+					<option value="">From </option>
+					{CurrencyRefs.currencies.map((currency: string, index: number) => (
+						<option key={index} value={currency}>
+							{currency}
+						</option>
+					))}
+				</select>
 
-return(
+				<select
+					name="To"
+					id="ToCurrency"
+					className="currency-container"
+					onChange={(selection) => HandleChoiceTo(selection.target.value)}
+				>
+					<option value="">To</option>
+					{CurrencyRefs.currencies.map((currency: string, index: number) => (
+						<option key={index} value={currency}>
+							{currency}
+						</option>
+					))}
+				</select>
+			</div>
 
-    <div>
 
-        <div>
-            <select name="From" id="FromCurrency"
-             onChange={(selection) => HandleChoiceFrom(selection.target.value)}>
-            
-                {CurrencyRefs.currencies.map( (currency: string, index: number) => (
-                    <option  key={index} value={currency}>{currency} </option>
-                ))}
+			<div>
+				<input
+					type="text"
+					className="valeur-result"
+					value={balance}
+					onChange={(event) => handleBalanceInput(event.target.value)}
+					placeholder="Enter amount"
+				/>
+			</div>
+			<button onClick={handleProcessInput}>Submit</button>
 
-            </select>
-        </div>
+			<label>
+				<input
+					type="text"
+					className="valeur-result"
+					value={conversionResult}
+					placeholder="Conversion result"
+					readOnly
+				/>
+			</label>
+		</div>
+	);
 
-
-        <div>
-            <select name="To" id="ToCurrency"
-                onChange={(selection) => HandleChoiceTo(selection.target.value)}>
-
-                {CurrencyRefs.currencies.map( (currency: string, index: number) => (
-                    <option  key={index} value={currency}>{currency}</option>
-                ))}
-
-            </select>
-        </div>
-
-        <div>
-            <input type="text"
-            value={balance}
-            onChange={(event)=>{handleBalanceInput(event.target.value)}}
-            placeholder="Only numbers"/> 
-        </div>
-        <button onClick={handleProcessInput} >Submit</button>
-
-        <label>
-       
-        <input
-          type="text"
-          value={conversionResult}
-          placeholder="Conversion result" 
-          readOnly 
-        />
-      </label>
-
-    </div>
-
-);
 }
+
 export default ChooseCurrency;

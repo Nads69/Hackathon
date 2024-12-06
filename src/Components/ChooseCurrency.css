@@ -1,0 +1,170 @@
+/* Styles pour les sélecteurs de devise */
+.deviseCss {
+	@apply w-full 
+    px-4 
+    py-2 
+    border 
+    border-gray-300 
+    rounded-md 
+    shadow-sm 
+    focus:outline-none 
+    focus:ring-2 
+    focus:ring-blue-500 
+    focus:border-blue-500 
+    transition-all 
+    duration-200 
+    appearance-none 
+    bg-white 
+    text-gray-900;
+}
+
+.currency-selectors {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	margin-bottom: 2rem;
+}
+
+.currency-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	max-width: 200px;
+	margin: 0 auto;
+	border-radius: 2px;
+	padding: 1rem 1.5rem;
+	background: rgba(57, 63, 84, 0);
+	color: #bfd2ff;
+	font-size: 1.6rem;
+	line-height: 1.5rem;
+	vertical-align: middle;
+	cursor: pointer;
+	border: none;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.currency-container:hover {
+	background: rgba(57, 63, 84, 0.514);
+	color: #ffffff;
+}
+
+.currency-container::after {
+	content: "";
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 999;
+	height: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background-position: 0% 0%;
+	background: linear-gradient(
+		to right,
+		#b294ff,
+		#57e6e6,
+		#feffb8,
+		#57e6e6,
+		#b294ff,
+		#57e6e6
+	);
+	background-size: 500% auto;
+	animation: gradient 3s linear infinite;
+}
+
+/* Dropdown content (hidden by default) */
+.currency-container .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: rgba(57, 63, 84, 0.308);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	border-radius: 2px;
+}
+
+/* Links inside the dropdown */
+.currency-container .dropdown-content option {
+	color: #bfd2ff46;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.currency-container .dropdown-content option:hover {
+	background-color: rgba(57, 63, 84, 0.356);
+	color: #ffffff;
+}
+
+/* Show the dropdown menu on hover */
+.currency-container:hover .dropdown-content {
+	display: block;
+}
+
+/* Styles pour le champ "Conversion result" */
+.valeur-result {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+	max-width: 300px;
+	margin: 0 auto;
+	border-radius: 2px;
+	padding: 1.4rem 2rem 1.6rem;
+	background: rgba(57, 63, 84, 0.404);
+	color: #bfd2ff;
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	vertical-align: middle;
+}
+
+.valeur-result::placeholder {
+	color: #7881a1;
+}
+
+.valeur-result:read-only {
+	cursor: not-allowed;
+	background-color: rgba(57, 63, 84, 0.438);
+	color: #bfd2ff;
+}
+
+.valeur-result:read-only::placeholder {
+	color: #7881a1;
+}
+
+.valeur-result::after {
+	content: "";
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 999;
+	height: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background-position: 0% 0%;
+	/* biome-ignore lint/suspicious/noShorthandPropertyOverrides: <explanation> */
+	background: linear-gradient(
+		to right,
+		#b294ff,
+		#57e6e6,
+		#feffb8,
+		#57e6e6,
+		#b294ff,
+		#57e6e6
+	);
+	background-size: 500% auto;
+	animation: gradient 3s linear infinite;
+}
+
+/* @keyframes gradient {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 100% 0;
+	}
+} */
