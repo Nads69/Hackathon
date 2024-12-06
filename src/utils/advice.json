@@ -1,0 +1,203 @@
+{
+    "data": {
+      "AUD": {
+        "country": "Australie",
+        "gestes": "Soyez détendu dans vos interactions.",
+        "phrase": "G'day mate! (Bonjour !)",
+        "conseil": "Apportez un chapeau pour vous protéger du soleil intense."
+      },
+      "BGN": {
+        "country": "Bulgarie",
+        "gestes": "Un hochement de tête peut signifier 'non'.",
+        "phrase": "Kъде е най-близкият ресторант? (Où est le restaurant le plus proche ?)",
+        "conseil": "Goûtez aux plats locaux comme le banitsa."
+      },
+      "BRL": {
+        "country": "Brésil",
+        "gestes": "Un pouce levé est très courant pour indiquer un accord.",
+        "phrase": "Quanto custa isso? (Combien cela coûte ?)",
+        "conseil": "Soyez prudent avec vos objets de valeur dans les grandes villes."
+      },
+      "CAD": {
+        "country": "Canada",
+        "gestes": "Un sourire est une forme de politesse.",
+        "phrase": "Can you recommend a good place to eat?",
+        "conseil": "Attendez-vous à des pourboires dans les restaurants (15-20%)."
+      },
+      "CHF": {
+        "country": "Suisse",
+        "gestes": "Soyez ponctuel, la ponctualité est très importante.",
+        "phrase": "Où puis-je acheter des chocolats ?",
+        "conseil": "Essayez les transports publics, ils sont très efficaces."
+      },
+      "CNY": {
+        "country": "Chine",
+        "gestes": "Utilisez vos deux mains pour offrir ou recevoir des objets.",
+        "phrase": "这个多少钱? (Zhège duōshǎo qián?) - Combien ça coûte ?",
+        "conseil": "Ayez WeChat ou Alipay pour les paiements."
+      },
+      "CZK": {
+        "country": "République tchèque",
+        "gestes": "Un sourire est apprécié mais peut sembler formel.",
+        "phrase": "Kde je nejbližší restaurace? (Où est le restaurant le plus proche ?)",
+        "conseil": "Goûtez la bière locale, elle est célèbre mondialement."
+      },
+      "DKK": {
+        "country": "Danemark",
+        "gestes": "Soyez direct et honnête dans vos conversations.",
+        "phrase": "Hvor er nærmeste restaurant? (Où est le restaurant le plus proche ?)",
+        "conseil": "Essayez le 'hygge', un mode de vie danois pour se sentir bien."
+      },
+      "EUR": {
+        "country": "Zone euro",
+        "gestes": "Soyez respectueux des heures de repas.",
+        "phrase": "Où puis-je trouver un bon restaurant ?",
+        "conseil": "Ayez toujours quelques pièces pour les pourboires ou les toilettes."
+      },
+      "GBP": {
+        "country": "Royaume-Uni",
+        "gestes": "Une poignée de main ferme est la norme.",
+        "phrase": "Where is the nearest pub?",
+        "conseil": "Ne coupez pas la file d’attente, c’est très mal vu."
+      },
+      "HKD": {
+        "country": "Hong Kong",
+        "gestes": "Évitez de pointer quelqu'un du doigt.",
+        "phrase": "這個多少錢? (Zhège duōshǎo qián?) - Combien ça coûte ?",
+        "conseil": "Ayez des espèces, surtout pour les petits achats."
+      },
+      "HRK": {
+        "country": "Croatie",
+        "gestes": "Une poignée de main est courante pour se saluer.",
+        "phrase": "Gdje je najbliži restoran? (Où est le restaurant le plus proche ?)",
+        "conseil": "Visitez les plages, elles sont magnifiques."
+      },
+      "HUF": {
+        "country": "Hongrie",
+        "gestes": "Évitez de trinquer avec de la bière, c'est mal vu.",
+        "phrase": "Hol van a legközelebbi étterem? (Où est le restaurant le plus proche ?)",
+        "conseil": "Essayez les bains thermaux, une tradition locale."
+      },
+      "IDR": {
+        "country": "Indonésie",
+        "gestes": "Utilisez la main droite pour donner ou recevoir des objets.",
+        "phrase": "Berapa harganya? (Combien ça coûte ?)",
+        "conseil": "Soyez prêt à négocier dans les marchés."
+      },
+      "ILS": {
+        "country": "Israël",
+        "gestes": "Un hochement de tête signifie souvent 'oui'.",
+        "phrase": "Eifo ani yachol liknot maslul tov? (Où puis-je acheter de la nourriture ?)",
+        "conseil": "Essayez les marchés locaux pour une expérience authentique."
+      },
+      "INR": {
+        "country": "Inde",
+        "gestes": "Inclinez légèrement la tête pour montrer votre accord.",
+        "phrase": "Yeh kitne ka hai? (Combien cela coûte ?)",
+        "conseil": "N'oubliez pas de goûter au chai (thé indien)."
+      },
+      "ISK": {
+        "country": "Islande",
+        "gestes": "Les salutations sont simples, souvent une poignée de main.",
+        "phrase": "Hvar er næsti veitingastaður? (Où est le restaurant le plus proche ?)",
+        "conseil": "Apportez des vêtements chauds, même en été."
+      },
+      "JPY": {
+        "country": "Japon",
+        "gestes": "Inclinez-vous légèrement pour saluer.",
+        "phrase": "Sumimasen (Excusez-moi).",
+        "conseil": "Ayez de l'argent liquide, car les paiements par carte sont moins courants."
+      },
+      "KRW": {
+        "country": "Corée du Sud",
+        "gestes": "Donnez et recevez des objets avec les deux mains.",
+        "phrase": "이것은 얼마입니까? (Combien cela coûte ?)",
+        "conseil": "Apportez une carte de transport pour les déplacements."
+      },
+      "MXN": {
+        "country": "Mexique",
+        "gestes": "Un geste de la main pour saluer est courant.",
+        "phrase": "¿Cuánto cuesta esto? (Combien ça coûte ?)",
+        "conseil": "Soyez prêt à négocier dans les marchés locaux."
+      },
+      "MYR": {
+        "country": "Malaisie",
+        "gestes": "L'étiquette est très importante, surtout lors des repas.",
+        "phrase": "Berapa harga ini? (Combien cela coûte ?)",
+        "conseil": "Visitez les plages et profitez de la diversité des cuisines locales."
+      },
+      "NOK": {
+        "country": "Norvège",
+        "gestes": "Soyez direct et respectueux.",
+        "phrase": "Hvor er den nærmeste restaurant? (Où est le restaurant le plus proche ?)",
+        "conseil": "Le café est très populaire, essayez-le dans un café local."
+      },
+      "NZD": {
+        "country": "Nouvelle-Zélande",
+        "gestes": "Un sourire chaleureux est apprécié.",
+        "phrase": "Where is the nearest restaurant?",
+        "conseil": "Les activités de plein air sont populaires, comme la randonnée et le saut à l'élastique."
+      },
+      "PHP": {
+        "country": "Philippines",
+        "gestes": "Utilisez la main droite pour remettre quelque chose.",
+        "phrase": "Magkano ito? (Combien cela coûte ?)",
+        "conseil": "Soyez prêt à négocier dans les marchés locaux."
+      },
+      "PLN": {
+        "country": "Pologne",
+        "gestes": "Les Polonais apprécient la politesse et les formalités.",
+        "phrase": "Gdzie jest najbliższa restauracja? (Où est le restaurant le plus proche ?)",
+        "conseil": "Essayez le pierogi, un plat traditionnel polonais."
+      },
+      "RON": {
+        "country": "Roumanie",
+        "gestes": "Un contact visuel est très important pour montrer de la sincérité.",
+        "phrase": "Unde este cel mai apropiat restaurant? (Où est le restaurant le plus proche ?)",
+        "conseil": "Goûtez à la soupe de bortsch, très populaire en Roumanie."
+      },
+      "RUB": {
+        "country": "Russie",
+        "gestes": "Un sourire peut sembler étrange, mais restez respectueux.",
+        "phrase": "Сколько это стоит? (Skol'ko eto stoit?) - Combien ça coûte ?",
+        "conseil": "Apprenez quelques mots de russe pour montrer votre intégration"
+  },
+      "SEK": {
+        "country": "Suède",
+        "gestes": "Les Suédois sont réputés pour leur réserve et leur respect de l'espace personnel.",
+        "phrase": "Var är närmaste restaurang? (Où est le restaurant le plus proche ?)",
+        "conseil": "L'usage du vélo est populaire, alors pensez à en louer un."
+      },
+      "SGD": {
+        "country": "Singapour",
+        "gestes": "L'étiquette est importante, et la politesse est très appréciée.",
+        "phrase": "在哪里可以买到好的食物？ (Wèishéme kěyǐ mǎi dào hǎo de shíwù?) - Où puis-je trouver de la bonne nourriture ?",
+        "conseil": "Les hawker centres offrent une expérience culinaire locale."
+      },
+      "THB": {
+        "country": "Thaïlande",
+        "gestes": "Les Thaïlandais apprécient la politesse, notamment les salutations traditionnelles avec les mains jointes.",
+        "phrase": "เท่าไหร่? (Tao rai?) - Combien ça coûte ?",
+        "conseil": "Visitez les temples et respectez les règles locales de conduite."
+      },
+      "TRY": {
+        "country": "Turquie",
+        "gestes": "Les poignées de main sont courantes, mais il est important de respecter les coutumes locales.",
+        "phrase": "Bu ne kadar? (Combien ça coûte ?)",
+        "conseil": "Le marché couvert à Istanbul est un incontournable pour les souvenirs."
+      },
+      "USD": {
+        "country": "États-Unis",
+        "gestes": "Une poignée de main ferme et un sourire sont de mise lors des salutations.",
+        "phrase": "Where is the nearest restaurant?",
+        "conseil": "Les pourboires sont importants dans de nombreux secteurs, comme les restaurants et les taxis."
+      },
+      "ZAR": {
+        "country": "Afrique du Sud",
+        "gestes": "Les Sud-Africains sont amicaux, mais un peu de réserve est souvent de mise.",
+        "phrase": "Waar is die naaste restaurant? (Où est le restaurant le plus proche ?)",
+        "conseil": "Soyez vigilant dans certaines zones urbaines, mais profitez des safaris."
+      }
+    }
+  }
+  
