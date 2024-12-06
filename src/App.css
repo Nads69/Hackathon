@@ -5,7 +5,6 @@
 }
 
 body {
-  height: 100vh;
   background-image: url("../public/Background.png");
   background-size: cover;
   background-repeat: no-repeat;
