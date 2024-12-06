@@ -1,13 +1,31 @@
 import "./Advice.css";
 import { useEffect, useState } from "react";
+import { useCurrency } from "../../contexts/context";
 
-export default function Advice() {
-  const [currencyData, setCurrencyData] = useState(null);
-  const [selectedCurrency, setSelectedCurrency] = useState(null);
-  const [error, setError] = useState(null);
+
+  export default function Advice() {
+
+
+  const   [currencyData, setCurrencyData] = useState(null);
+  const   [selectedCurrency, setSelectedCurrency] = useState(null);
+  const   {toList} = useCurrency();
+  const   {isSubmitted} = useCurrency();
+  const   [error, setError] = useState(null);
+
 
   useEffect(() => {
-    fetch("http://localhost:3000/Currency")
+
+    const url = `http://localhost:3000/Currency?curr=${toList}`; 
+    console.log(url);
+    //console.log(toList);
+    //console.log(isSubmitted);
+
+    fetch("http://localhost:3000/Currency?curr=USD", {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },}
+    )
       .then((res) => {
         if (!res.ok) {
           throw new Error("Erreur de récupération des données");
@@ -24,7 +42,9 @@ export default function Advice() {
         console.error("Erreur:", error);
         setError(error.message);
       });
-  }, []);
+  }, [toList, isSubmitted]);
+
+
 
   const handleCurrencyChange = (event) => {
     setSelectedCurrency(event.target.value);
@@ -39,6 +59,8 @@ export default function Advice() {
   }
 
   const selectedCountryInfo = currencyData[selectedCurrency];
+
+
 
   return (
     <div className="advice-container">

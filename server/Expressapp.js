@@ -1,22 +1,28 @@
 import express from "express";
 import { readFile } from "node:fs/promises";
+import cors from "cors";
 
 const app = express();
 
+app.use(cors({ 
+    origin: 'http://localhost:5173',
+}));
+
 function ParseJsonfile(userRequest, jsonFile) {
   const { curr } = userRequest;
+  console.log(curr);
+  console.log(jsonFile);
   let index = 0;
 
   while (Object.keys(jsonFile)[index]) {
-    if (Object.keys(jsonFile)[index] == curr) {
+    if (Object.values(jsonFile)[index] == curr) {
       return Object.values(jsonFile)[index];
     }
     index++;
   }
 }
 
-//http://localhost:3000/Currency?curr=
-
+//http://localhost:3000/Currency?curr=USD
 app.get("/Currency", (request, response) => {
   readFile("./Currency.json", "utf-8")
     .then((jsonString) => {
@@ -33,4 +39,7 @@ app.get("/Currency", (request, response) => {
     });
 });
 
-app.listen(3000, console.log("app is listening on port 3000"));
+const port = 3000
+app.listen(port, () => {
+console.info("app is listening on port 3000")
+})

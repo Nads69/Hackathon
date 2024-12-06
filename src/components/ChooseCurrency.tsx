@@ -1,5 +1,6 @@
 import CurrencyReferences from "../utils/CurrencyList.json";
 import { useEffect, useState } from "react";
+import { useCurrency } from "../contexts/context";
 
 interface CurrencyData {
     currencies: string[];
@@ -17,10 +18,12 @@ function ChooseCurrency()
 
     const   CurrencyRefs : CurrencyData = CurrencyReferences;
     const   [fromList, setFromList] = useState("");
-    const   [toList, setToList] = useState("");
+    //const   [toList, setToList] = useState("");
+    const   {toList, setToList} = useCurrency();
     const   [balance, setBalance] = useState("");
-    const   [isSubmitted, setIsSubmitted] = useState(false);
+    //const   [isSubmitted, setIsSubmitted] = useState(false);
     const   [resultInput, setResultInput] = useState(0);
+    const   {isSubmitted, setIsSubmitted} = useCurrency();
     const   [conversionResult, setConversionResult] = useState("");
 
     const   apiKey = import.meta.env.VITE_CLIENT_API_KEY;
@@ -28,12 +31,12 @@ function ChooseCurrency()
 
     const HandleChoiceFrom = (name: string) => {
         setFromList(name);
-        console.log(name);
+        //console.log(name);
     };
 
     const HandleChoiceTo = (name: string) => {
         setToList(name);
-        console.log(name);
+        //console.log(name);
     };
 
     const handleBalanceInput = (input: string) => {
@@ -47,11 +50,14 @@ function ChooseCurrency()
         }
         const   resultInput = parseFloat(parseFloat(balance).toFixed(2)); 
         setResultInput(resultInput);
-        console.log( " ResultInput",resultInput);        
+        //console.log( " ResultInput",resultInput);        
     }
 
     const handleProcessInput = () => {
+        if(isSubmitted === false)
         setIsSubmitted(true);
+        else if(isSubmitted === true)
+        setIsSubmitted(false);
     }
 
 
@@ -59,14 +65,14 @@ function ChooseCurrency()
     
     const url = `https://api.freecurrencyapi.com/v1/latest?apikey=${apiKey}&currencies=${toList}&base_currency=${fromList}`;
 
-    console.log(url);
+    //console.log(url);
 
     if(fromList === "" || toList === "" )
     {
-        console.log("working");
+        console.log("ChooseCurrency.tsx");
     }
     else{
-        console.log("test");
+        //console.log("test");
 
         fetch(url)
         .then((response) => {
@@ -96,8 +102,6 @@ function ChooseCurrency()
 return(
 
     <div>
-
-      
 
         <div>
             <select name="From" id="FromCurrency"
